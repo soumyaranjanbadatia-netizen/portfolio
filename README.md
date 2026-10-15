@@ -3,7 +3,19 @@
 A modern, accessible, and fully responsive personal portfolio built with
 **vanilla HTML5, CSS3, and JavaScript** (no frameworks).
 
-![Portfolio screenshot](./images/screenshot.png)
+![Portfolio screenshot]
+
+👤 About Section
+(./screenshots/About.png)
+
+📩 Contact Section
+(./screenshots/contact.png)
+
+🏠 Home Section
+(./screenshots/Home.png)
+
+🛠️ Skills Section
+(./screenshots/Skills.png)
 
 ## ✨ Features
 
@@ -18,25 +30,25 @@ A modern, accessible, and fully responsive personal portfolio built with
 
 ## 📂 Project Structure
 week1-portfolio/
-│── index.html
-│── css/
-│ ├── style.css
-│ ├── responsive.css
-│ └── variables.css
-│── js/
-│ └── navigation.js
-│── images/
-│ ├── profile.jpg
-│ ├── project1.jpg
-│ ├── project2.jpg
-│ ├── project3.jpg
-│ └── icons/
-│── README.md
-└── .gitignore
+├── 📁 css/
+│   ├── 🎨 responsive.css
+│   ├── 🎨 style.css
+│   └── 🎨 variables.css
+├── 📁 js/
+│   └── 📄 navigation.js
+├── 📁 screenshots/
+│   ├── 🖼️ About.png
+│   ├── 🖼️ Home.png
+│   ├── 🖼️ Skills.png
+│   └── 🖼️ contact.png
+├── ⚙️ .gitignore
+├── 📝 README.md
+├── 🖼️ image.png
+└── 🌐 index.html
 
 
 ## 🚀 Getting Started
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/week1-portfolio.git
+   git clone https://github.com/soumyaranjanbadatia-netizen/portfolio
