@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alex Morgan — Front-End Developer. Portfolio showcasing projects, skills, and contact information."
+    />
+    <meta name="author" content="Alex Morgan" />
+    <title>Soumya Ranjan Badatia | Front-End Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles (order matters) -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="logo" aria-label="Alex Morgan — Home">
+          <span class="logo-text">Soumya Ranjan Badatia</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+        >
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ============ MAIN ============ -->
+    <main id="main">
+      <!-- ---------- HERO ---------- -->
+      <section class="hero section" id="hero" aria-labelledby="hero-heading">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1 id="hero-heading" class="hero-title">Soumya Ranjan Badatia</h1>
+            <p class="hero-subtitle">Front-End Developer &amp; UI Enthusiast</p>
+            <p class="hero-text">
+              I craft fast, accessible, and beautiful web experiences using
+              modern HTML, CSS, and JavaScript. Currently building delightful
+              interfaces at the intersection of design and code.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-ghost">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <img
+              src="images/photo.jpg"
+              alt="photo, front-end developer"
+              width="400"
+              height="600"
+              loading="eager"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- ABOUT ---------- -->
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Get to know me</p>
+            <h2 id="about-heading" class="section-title">About</h2>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I'm a front-end developer with 2+ years of experience turning
+                design mockups into pixel-perfect, responsive websites. I care
+                deeply about accessibility, performance, and clean, maintainable
+                code.
+              </p>
+              <p>
+                My toolkit centers on semantic HTML, modern CSS (Grid, Flexbox,
+                custom properties), and vanilla JavaScript. I also enjoy
+                collaborating with designers and back-end engineers to ship
+                products that feel great to use.
+              </p>
+              <p>
+                When I'm not coding, you'll find me hiking, sketching UI ideas,
+                or contributing to open-source projects.
+              </p>
+            </div>
+
+            <aside class="about-facts" aria-label="Quick facts">
+              <h3 class="facts-title">Quick Facts</h3>
+              <ul class="facts-list">
+                <li>
+                  <span aria-hidden="true">📍</span> Based in Odisha, Berhampur
+                </li>
+                <li>
+                  <span aria-hidden="true">💼</span> 2+ years of experience
+                </li>
+                <li>
+                  <span aria-hidden="true">🎓</span> Master in Computer
+                  Application
+                </li>
+                <li><span aria-hidden="true">🌐</span> English, Hindi</li>
+                <li>
+                  <span aria-hidden="true">☕</span> Fueled by coffee &amp;
+                  curiosity
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- SKILLS ---------- -->
+      <section
+        class="section section-alt"
+        id="skills"
+        aria-labelledby="skills-heading"
+      >
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">What I work with</p>
+            <h2 id="skills-heading" class="section-title">Skills</h2>
+          </header>
+
+          <ul class="skills-grid" role="list">
+            <li class="skill-card">
+              <div class="skill-head">
+                <span class="skill-icon" aria-hidden="true">🧱</span>
+                <h3 class="skill-name">HTML5</h3>
+              </div>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="HTML5 proficiency"
+              >
+                <span class="skill-fill" style="--level: 95%"></span>
+              </div>
+            </li>
+
+            <li class="skill-card">
+              <div class="skill-head">
+                <span class="skill-icon" aria-hidden="true">🎨</span>
+                <h3 class="skill-name">CSS3</h3>
+              </div>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuenow="92"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="CSS3 proficiency"
+              >
+                <span class="skill-fill" style="--level: 92%"></span>
+              </div>
+            </li>
+
+            <li class="skill-card">
+              <div class="skill-head">
+                <span class="skill-icon" aria-hidden="true">⚡</span>
+                <h3 class="skill-name">JavaScript</h3>
+              </div>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="JavaScript proficiency"
+              >
+                <span class="skill-fill" style="--level: 85%"></span>
+              </div>
+            </li>
+
+            <li class="skill-card">
+              <div class="skill-head">
+                <span class="skill-icon" aria-hidden="true">♿</span>
+                <h3 class="skill-name">Accessibility</h3>
+              </div>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuenow="88"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Accessibility proficiency"
+              >
+                <span class="skill-fill" style="--level: 88%"></span>
+              </div>
+            </li>
+
+            <li class="skill-card">
+              <div class="skill-head">
+                <span class="skill-icon" aria-hidden="true">🌿</span>
+                <h3 class="skill-name">Git &amp; GitHub</h3>
+              </div>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Git and GitHub proficiency"
+              >
+                <span class="skill-fill" style="--level: 90%"></span>
+              </div>
+            </li>
+
+            <li class="skill-card">
+              <div class="skill-head">
+                <span class="skill-icon" aria-hidden="true">📱</span>
+                <h3 class="skill-name">Responsive Design</h3>
+              </div>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuenow="93"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Responsive design proficiency"
+              >
+                <span class="skill-fill" style="--level: 93%"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ---------- PROJECTS ---------- -->
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Recent work</p>
+            <h2 id="projects-heading" class="section-title">Projects</h2>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="images/project1.jpg"
+                  alt="Screenshot of the TaskFlow task management app"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">TaskFlow</h3>
+                <p class="project-desc">
+                  A lightweight task manager with drag-and-drop, offline
+                  support, and keyboard-first interactions.
+                </p>
+                <ul class="project-tags" role="list">
+                  <li>JavaScript</li>
+                  <li>IndexedDB</li>
+                  <li>CSS Grid</li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="btn btn-small"
+                    aria-label="View TaskFlow live demo"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-small btn-ghost"
+                    aria-label="View TaskFlow source code on GitHub"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="images/project2.jpg"
+                  alt="Screenshot of the WeatherNow weather dashboard"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">WeatherNow</h3>
+                <p class="project-desc">
+                  A clean weather dashboard pulling live data from a public API,
+                  with geolocation and dark mode.
+                </p>
+                <ul class="project-tags" role="list">
+                  <li>Fetch API</li>
+                  <li>CSS Variables</li>
+                  <li>Flexbox</li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="btn btn-small"
+                    aria-label="View WeatherNow live demo"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-small btn-ghost"
+                    aria-label="View WeatherNow source code on GitHub"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="images/project3.jpg"
+                  alt="Screenshot of the A11yAudit accessibility checker"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">A11yAudit</h3>
+                <p class="project-desc">
+                  A browser-based tool that scans a page for common
+                  accessibility issues and suggests fixes.
+                </p>
+                <ul class="project-tags" role="list">
+                  <li>Accessibility</li>
+                  <li>ARIA</li>
+                  <li>Vanilla JS</li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="btn btn-small"
+                    aria-label="View A11yAudit live demo"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-small btn-ghost"
+                    aria-label="View A11yAudit source code on GitHub"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- CONTACT ---------- -->
+      <section
+        class="section section-alt"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Let's talk</p>
+            <h2 id="contact-heading" class="section-title">Contact</h2>
+          </header>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <p>
+                Have a project in mind, a question, or just want to say hi? Fill
+                out the form and I'll get back to you within 24 hours.
+              </p>
+              <ul class="contact-list" role="list">
+                <li>
+                  <span class="contact-icon" aria-hidden="true">✉️</span>
+                  <a href="mailto:alex@example.com">soumy@gmail.com</a>
+                </li>
+
+                <li>
+                  <span class="contact-icon" aria-hidden="true">💼</span>
+                  <a href="#" aria-label="Alex Morgan on LinkedIn"
+                    >linkedin.com/in/soumyaranjan12</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-field">
+                <label for="name">Name <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  minlength="2"
+                  autocomplete="name"
+                  aria-describedby="name-error"
+                />
+                <p class="error" id="name-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="email"
+                  >Email <span aria-hidden="true">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  aria-describedby="email-error"
+                />
+                <p class="error" id="email-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="message"
+                  >Message <span aria-hidden="true">*</span></label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  minlength="10"
+                  aria-describedby="message-error"
+                ></textarea>
+                <p class="error" id="message-error" aria-live="polite"></p>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+
+              <p
+                class="form-success"
+                id="formSuccess"
+                aria-live="polite"
+                hidden
+              >
+                ✅ Thanks! Your message has been sent.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="copyright">
+          © <span id="year"></span> Soumya Ranjan Badatia. All rights reserved.
+        </p>
+
+        <a href="#top" class="back-to-top" aria-label="Back to top">↑ Top</a>
+      </div>
+    </footer>
+
+    <script src="js/navigation.js" defer></script>
+  </body>
+</html>

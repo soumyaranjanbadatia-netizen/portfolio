@@ -1,0 +1,103 @@
+/* =========================================================
+   Design Tokens — CSS Custom Properties
+   ========================================================= */
+
+:root {
+  /* Colors — Light theme (default) */
+  --color-bg:            #ffffff;
+  --color-bg-alt:        #f5f7fb;
+  --color-surface:       #ffffff;
+  --color-text:          #1a202c;
+  --color-text-muted:    #4a5568;
+  --color-border:        #e2e8f0;
+
+  --color-primary:       #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-primary-soft:  #eef2ff;
+
+  --color-accent:        #06b6d4;
+  --color-error:         #dc2626;
+  --color-success:       #16a34a;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --fs-xs:   0.8125rem;  /* 13px */
+  --fs-sm:   0.9375rem;  /* 15px */
+  --fs-base: 1rem;       /* 16px */
+  --fs-lg:   1.125rem;   /* 18px */
+  --fs-xl:   1.375rem;   /* 22px */
+  --fs-2xl:  1.75rem;    /* 28px */
+  --fs-3xl:  2.25rem;    /* 36px */
+  --fs-4xl:  3rem;       /* 48px */
+
+  --lh-tight: 1.2;
+  --lh-base:  1.6;
+
+  /* Spacing scale */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 4px 12px rgba(16, 24, 40, 0.08);
+  --shadow-lg: 0 12px 28px rgba(16, 24, 40, 0.12);
+
+  /* Layout */
+  --container-max: 1100px;
+  --header-height: 68px;
+
+  /* Motion */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+/* ---------- Dark theme ---------- */
+[data-theme="dark"] {
+  --color-bg:         #0f172a;
+  --color-bg-alt:     #111c33;
+  --color-surface:    #1e293b;
+  --color-text:       #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-border:     #334155;
+
+  --color-primary:       #818cf8;
+  --color-primary-hover: #a5b4fc;
+  --color-primary-soft:  #1e1b4b;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.55);
+}
+
+/* Respect system preference if user hasn't manually chosen */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg:         #0f172a;
+    --color-bg-alt:     #111c33;
+    --color-surface:    #1e293b;
+    --color-text:       #e2e8f0;
+    --color-text-muted: #94a3b8;
+    --color-border:     #334155;
+
+    --color-primary:       #818cf8;
+    --color-primary-hover: #a5b4fc;
+    --color-primary-soft:  #1e1b4b;
+  }
+}

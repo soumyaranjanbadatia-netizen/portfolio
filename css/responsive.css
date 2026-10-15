@@ -1,0 +1,127 @@
+/* =========================================================
+   Responsive — Mobile-first with progressive enhancement
+   Breakpoints: 480px, 768px, 1024px
+   ========================================================= */
+
+/* ---------- Small tablets / large phones (≥ 480px) ---------- */
+@media (min-width: 480px) {
+  .container {
+    padding-inline: var(--space-6);
+  }
+
+  .hero-media img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* ---------- Tablets (≥ 768px) ---------- */
+@media (min-width: 768px) {
+  .section {
+    padding-block: var(--space-24);
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-16);
+  }
+
+  .hero-media {
+    justify-self: end;
+  }
+
+  .about-grid {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* ---------- Desktop (≥ 1024px) ---------- */
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: var(--fs-4xl);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================================================
+   Mobile navigation (< 768px)
+   ========================================================= */
+
+@media (max-width: 767px) {
+  .nav-toggle {
+    display: flex;
+    order: 2;
+  }
+
+  .theme-toggle {
+    order: 3;
+    margin-left: var(--space-2);
+  }
+
+  .logo {
+    order: 1;
+    flex: 1;
+  }
+
+  .primary-nav {
+    position: fixed;
+    inset: var(--header-height) 0 auto 0;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-4) var(--space-6) var(--space-6);
+    transform: translateY(-110%);
+    transition: transform var(--transition-base);
+    box-shadow: var(--shadow-md);
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+  }
+
+  .primary-nav.is-open {
+    transform: translateY(0);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .nav-list li {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .nav-list li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link {
+    display: block;
+    padding: var(--space-4) 0;
+    font-size: var(--fs-base);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+}
+
+/* Prevent body scroll when mobile nav is open */
+body.nav-open {
+  overflow: hidden;
+}
